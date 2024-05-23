@@ -24,6 +24,8 @@ public class InventorySystem {
      *
      * @param itemID The ID of the item to retrieve information for.
      * @return The ItemDTO object containing information about the item if found, otherwise null.
+     * @throws ItemNotFoundException when Item could not be found in inventory system.
+     * @throws ItemNotFoundException when connecting to database failed.
      */
 
     public ItemDTO getItemInfo(String itemID) throws ItemNotFoundException, DatabaseFailureException {

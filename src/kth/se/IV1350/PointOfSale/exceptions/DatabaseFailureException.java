@@ -1,7 +1,7 @@
 package kth.se.IV1350.PointOfSale.exceptions;
 
 /**
- * the class that throws exception when conneting to database failed
+ * the class that throws exception when connecting to database failed
  */
 public class DatabaseFailureException extends Exception {
     /**

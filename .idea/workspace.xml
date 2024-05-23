@@ -5,28 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b26f8412-207a-4809-b733-0eebb8ef105b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/POSseminare4.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/kth/se/IV1350/PointOfSale/controller/Controller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/kth/se/IV1350/PointOfSale/exceptions/DatabaseFailureException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/kth/se/IV1350/PointOfSale/exceptions/ItemNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/kth/se/IV1350/PointOfSale/integration/AccountingSystem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/kth/se/IV1350/PointOfSale/integration/InventorySystem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/kth/se/IV1350/PointOfSale/integration/Printer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/kth/se/IV1350/PointOfSale/model/ItemDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/kth/se/IV1350/PointOfSale/model/Reciept.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/kth/se/IV1350/PointOfSale/model/Sale.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/kth/se/IV1350/PointOfSale/model/SaleObserver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/kth/se/IV1350/PointOfSale/startup/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/kth/se/IV1350/PointOfSale/view/ErrorFileException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/kth/se/IV1350/PointOfSale/view/TotalRevenueFileOutput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/kth/se/IV1350/PointOfSale/view/TotalRevenueView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/kth/se/IV1350/PointOfSale/view/View.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/kth/se/IV1350/PointOfSale/exceptions/DatabaseFailureExceptionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test/kth/se/IV1350/PointOfSale/exceptions/ItemNotFoundExceptionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ErrorExceptionsFile.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ErrorExceptionsFile.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POSseminare4.iml" beforeDir="false" afterPath="$PROJECT_DIR$/POSseminare4.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kth/se/IV1350/PointOfSale/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kth/se/IV1350/PointOfSale/controller/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kth/se/IV1350/PointOfSale/exceptions/DatabaseFailureException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kth/se/IV1350/PointOfSale/exceptions/DatabaseFailureException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kth/se/IV1350/PointOfSale/exceptions/ItemNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kth/se/IV1350/PointOfSale/exceptions/ItemNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kth/se/IV1350/PointOfSale/integration/AccountingSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kth/se/IV1350/PointOfSale/integration/AccountingSystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kth/se/IV1350/PointOfSale/integration/InventorySystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kth/se/IV1350/PointOfSale/integration/InventorySystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kth/se/IV1350/PointOfSale/integration/Printer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kth/se/IV1350/PointOfSale/integration/Printer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kth/se/IV1350/PointOfSale/model/ItemDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kth/se/IV1350/PointOfSale/model/ItemDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kth/se/IV1350/PointOfSale/model/Reciept.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kth/se/IV1350/PointOfSale/model/Reciept.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kth/se/IV1350/PointOfSale/model/Sale.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kth/se/IV1350/PointOfSale/model/Sale.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kth/se/IV1350/PointOfSale/model/SaleObserver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kth/se/IV1350/PointOfSale/model/SaleObserver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kth/se/IV1350/PointOfSale/startup/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kth/se/IV1350/PointOfSale/startup/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kth/se/IV1350/PointOfSale/view/ErrorFileException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kth/se/IV1350/PointOfSale/view/ErrorFileException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kth/se/IV1350/PointOfSale/view/TotalRevenueFileOutput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kth/se/IV1350/PointOfSale/view/TotalRevenueFileOutput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kth/se/IV1350/PointOfSale/view/TotalRevenueView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kth/se/IV1350/PointOfSale/view/TotalRevenueView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kth/se/IV1350/PointOfSale/view/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kth/se/IV1350/PointOfSale/view/View.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/totalRevenueOutPut.txt" beforeDir="false" afterPath="$PROJECT_DIR$/totalRevenueOutPut.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +39,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -56,20 +59,37 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit4",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4": "",
     "git-widget-placeholder": "master",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "onboarding.tips.debug.path": "C:/Users/Abdul/OneDrive - KTH/OOP java/Seminarier/semi4/POSseminare4/src/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "preferences.lookFeel",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="kth.se.IV1350.PointOfSale.exceptions" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -86,6 +106,10 @@
       <workItem from="1715976069813" duration="14697000" />
       <workItem from="1716042930972" duration="12135000" />
       <workItem from="1716122368905" duration="4743000" />
+      <workItem from="1716131122734" duration="4434000" />
+      <workItem from="1716212692455" duration="1633000" />
+      <workItem from="1716291280323" duration="606000" />
+      <workItem from="1716463661433" duration="14631000" />
     </task>
     <servers />
   </component>

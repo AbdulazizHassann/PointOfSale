@@ -3,6 +3,10 @@ import java.io.PrintWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.time.temporal.ChronoUnit;
+
 /**
  * ErrorFileException class creates a log file for all exceptions that occur during sale.
  */
@@ -21,13 +25,24 @@ private static PrintWriter logFileExc ;
     }
 }
 
-    /** the method getError writes exception accorded in to the ErrorExceptionsFile.
+    /**
+     * Logs the details of an exception to a file.
      *
-     * @param exc the typ of exception which accorded.
+     * @param exc The exception to be logged.
      */
-    public static void getError( Exception exc){
 
-    logFileExc.println("Error: " + exc.getMessage());
-
-}
+    public static void logError(Exception exc) {
+        StringBuilder sbError = new StringBuilder();
+        sbError.append("-------------------------------------------\n");
+        sbError.append("Exception: ").append(exc.toString()).append("\n");
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm");
+        String formattedDateTime = LocalDateTime.now().truncatedTo(ChronoUnit.MINUTES).format(formatter);
+        sbError.append("Occurred at: ").append(formattedDateTime).append("\n");
+        sbError.append("Stacktrace:\n");
+        for (StackTraceElement element : exc.getStackTrace()) {
+            sbError.append(element.toString()).append("\n");
+        }
+        sbError.append("-------------------------------------------\n");
+        logFileExc.println(sbError.toString());
+    }
 }

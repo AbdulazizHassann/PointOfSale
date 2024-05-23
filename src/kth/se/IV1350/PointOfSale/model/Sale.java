@@ -143,7 +143,7 @@ public class Sale {
     /**
      * method that notify all registered of a new sale.
      */
-    public void notifyObservers(){
+    private void notifyObservers(){
         for(SaleObserver obs : SaleObserverList){
             obs.newSale(amountPaid);
         }
@@ -155,7 +155,6 @@ public class Sale {
      */
     public void addSaleObserver(List< SaleObserver> observerToAdd){
     SaleObserverList.addAll(observerToAdd);
-
-}
+    }
 }
 

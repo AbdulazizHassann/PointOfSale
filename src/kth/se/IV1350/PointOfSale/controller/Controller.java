@@ -45,24 +45,17 @@ public class Controller {
      * Scans an item with the given item ID and quantity.
      * If the item is found in the inventory system, its quantity is increased by the given amount.
      * The item is then added to the sale list.
-     * @param  itemID The ID of the item to be scanned.
-     *.
+     * @param itemID The ID of the item to be scanned.
+     *@throws ItemNotFoundException when Item could not be found in inventory system.
+     *@throws DatabaseFailureException when connecting to database failed
      */
 
 
     public ItemDTO scanItem(String itemID) throws ItemNotFoundException, DatabaseFailureException{
-
-        try {
-            ItemDTO scannedItem = inventorySystem.getItemInfo(itemID);
-            sale.addItemToList(scannedItem);
-            return scannedItem;
-        }catch (ItemNotFoundException e) {
-           throw e;
-        }catch(DatabaseFailureException e){
-            throw new DatabaseFailureException( e.getMessage());
-        }
-
-        }
+        ItemDTO scannedItem = inventorySystem.getItemInfo(itemID);
+        sale.addItemToList(scannedItem);
+        return scannedItem;
+    }
 
 
 

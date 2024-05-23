@@ -10,12 +10,12 @@ public class Printer {
 
     /**
      * this method is printed out the receipt
-     * @param receiptDTO.
+     * @param receipt the receipt to be printed out.
      */
     public static void printoutReceipt(Reciept receipt)
     {
         System.out.println(receipt.ToString());
-        //System.out.println(receipt.toString());
+
 
     }
 

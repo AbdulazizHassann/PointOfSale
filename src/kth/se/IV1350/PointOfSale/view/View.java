@@ -27,8 +27,10 @@ public class View {
 
 
 
-    /* Implementing a false abstraction as we are unable to create a genuine VY.
+    /** Implementing a false abstraction as we are unable to create a genuine VY.
     This method involves invoking all system operations within the controller.
+     @throws ItemNotFoundException when Item could not be found in inventory system.
+     @throws DatabaseFailureException when connecting to database failed.
     */
     public void runFakeExecution() throws  ItemNotFoundException, DatabaseFailureException{
 try {
@@ -56,7 +58,7 @@ try {
             + "itemDescription:" + item2.getItemDescription() + "");
 
     System.out.println("\nadd item 3:\n");
-    ItemDTO item3 =  contr.scanItem("xxxx");
+    ItemDTO item3 =  contr.scanItem("abc123");
 
     System.out.println("itemName:" + item3.getItemName() + "\n"
             + "itemID:" + item3.getItemID() + "\n"
@@ -97,7 +99,7 @@ try {
 
 
     System.out.println("\nadd item 7:\n");
-    ItemDTO item7 = contr.scanItem("abc123");
+    ItemDTO item7 = contr.scanItem("xxxx");
     System.out.println("itemName:" + item7.getItemName() + "\n"
             + "itemID:" + item7.getItemID() + "\n"
             + "itemPrice:" + item7.getPrice() + " SEK" + "\n"
@@ -107,11 +109,11 @@ try {
 
 
     }catch( ItemNotFoundException e){
-    System.out.println("Could not find the item:" + e.getMessage());
-    ErrorFileException.getError(e);
+    System.out.println("Could not find the scanned item in inventorySystem ");
+    ErrorFileException.logError(e);
     }catch (DatabaseFailureException e){
-    System.out.println("Could not connect database: " + e.getMessage());
-    ErrorFileException.getError(e);
+    System.out.println("an Error occurred with connecting database please tyr again later");
+    ErrorFileException.logError(e);
     }
 
 

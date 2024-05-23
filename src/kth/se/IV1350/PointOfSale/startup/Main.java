@@ -12,6 +12,9 @@ import  kth.se.IV1350.PointOfSale.view.View;
 /**
  * Main entry point of the application.
  * Initializes the necessary components and starts the application.
+ * @throws ItemNotFoundException when Item could not be found in inventory system.
+ * @throws DatabaseFailureException when connecting to database failed.
+ *
  */
 public class Main {
 
